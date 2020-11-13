@@ -1,7 +1,7 @@
 package smarthome;
 
-import Appliances.Terrarium;
-
+import java.util.Scanner;
+import Appliances.UI;
 /**
  *
  * @author v.rublova
@@ -12,7 +12,12 @@ public class SmartHome {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Terrarium terra = new Terrarium();
+       UI interf = new UI();
+       Scanner input = new Scanner(System.in);  // Create a Scanner object
+       interf.Hello();  
+       while(true){        
+           interf.Split(input.nextLine());
+       }
     }
     
 }

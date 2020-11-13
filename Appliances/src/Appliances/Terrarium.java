@@ -9,8 +9,8 @@ package Appliances;
  *
  * @author v.rublova
  */
-public class Terrarium implements Thing {
-    public void print() {
-        System.out.println("Fishy!");
-    }  
-}
+//public class Terrarium implements AThing {
+ //   public void print() {
+//        System.out.println("Fishy!");
+//    }  
+//}
