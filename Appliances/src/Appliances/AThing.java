@@ -11,46 +11,64 @@ package Appliances;
  */
 public interface AThing {
 
+    public void SetModel(String m);
+
     public void TurnOn();
+
     public void TurnOff();
-    
-    public void SetTimerOn(int time);
-    public void SetTimerOff(int time);
+
+    public boolean SetTimerOn(int time);
+
+    public boolean SetTimerOff(int time);
 
     public void Disconnect();
+
     public void Connect();
-    
+
     public boolean DisplayPower();
+
     public String DisplayModel();
+
     public boolean DisplayConnection();
+
     public byte DisplayDeterioration();
 }
-interface KitchenThing{
-    public void DisplayHeat();
-    
-    public void IncreaseHeat(); 
-    public void LowerHeat();
-    
-    public void ShowRecipes();
-    
+
+interface KitchenThing {
+
+    public short DisplayHeat();
+
+    public boolean IncreaseHeat(byte t);
+
+    public boolean LowerHeat(byte t);
+
+    public String ShowRecipes();
+
 }
-interface GrassyThing{
-    public void DisplayHeat();
-    
-    public void IncreaseHeat(); 
-    public void LowerHeat();
-    
+
+interface GrassyThing {
+
+    public byte DisplayHeat();
+
+    public boolean IncreaseHeat(byte t);
+
+    public boolean LowerHeat(byte t);
+
     public void TurnOnLight();
+
     public void TurnOffLight();
-    
-    public void TurnLightOnonTimer();
-    public void TurnLightOffonTimer();
-    
-    public void DisplayFoodLevel();
-    public void DisplayFoodType();
-    
-    public void Feed();
-    
-    public void TennantName();
-    public void TennantSpecies();
+
+    public boolean TurnLightOnonTimer(int timer);
+
+    public boolean TurnLightOffonTimer(int timer);
+
+    public byte DisplayFoodLevel();
+
+    public String DisplayFoodType();
+
+    public boolean Feed();
+
+    public void TennantName(String n);
+
+    public void TennantSpecies(String s);
 }

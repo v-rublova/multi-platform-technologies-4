@@ -1,7 +1,6 @@
 package smarthome;
 
 import java.util.Scanner;
-import Appliances.UI;
 /**
  *
  * @author v.rublova
@@ -13,9 +12,10 @@ public class SmartHome {
      */
     public static void main(String[] args) {
        UI interf = new UI();
-       Scanner input = new Scanner(System.in);  // Create a Scanner object
+       Scanner input = new Scanner(System.in);
        interf.Hello();  
        while(true){        
+           System.out.println("Selecting operation...");
            interf.Split(input.nextLine());
        }
     }
