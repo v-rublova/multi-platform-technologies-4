@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Appliances;
 
 import java.util.concurrent.Executors;
@@ -30,6 +25,8 @@ public class Terrarium extends BasicThing implements GrassyThing {
         this.tennant_species = "lizard";
         this.temperature = 15;
         this.light = true;
+        this.food_lvl = 100;
+        this.food_type = "apples";
     }
 
     public byte DisplayHeat() {

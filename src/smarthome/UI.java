@@ -33,7 +33,12 @@ public class UI {
         System.out.println("help s (h s) - list operations for selected item;");
         System.out.println("add - add things to the house;");
         System.out.println("list - display all appliances in the house;");
+        System.out.println("select - select a thingy from list;");
+        System.out.println("deselect - deselect a thingy;");
+        System.out.println("all on - turn everything on;");
+        System.out.println("all on - turn everything off;");
         System.out.println("exit - exit program;");
+       
     }
     public void Help_selection() {
         if (basic != null) {
@@ -85,7 +90,7 @@ public class UI {
                 }
             case "exit":
                 {
-                    System.exit(1);
+                    System.exit(0);
                     break;
                 }
 
@@ -351,6 +356,7 @@ public class UI {
 
                 BasicThing cus = (BasicThing) b;
                 i++;
+                System.out.println("~!~!~!~!~!~!~!~!~!~!~!~");
                 System.out.println("Index: " + i);
 
                 System.out.println(cus.DisplayAll());
@@ -419,7 +425,7 @@ public class UI {
                         basic = this.getElementByIndex(imp - 1);
                     }
             }
-            System.out.println(basic.DisplayModel()+ "is selected.");
+            System.out.println(basic.DisplayModel()+ " is selected.");
         }
     }
     private BasicThing getElementByIndex(int index) {

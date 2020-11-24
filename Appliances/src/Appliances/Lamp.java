@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Appliances;
 
 /**
@@ -35,7 +30,7 @@ public class Lamp extends BasicThing {
     public String ListColors() {
         String s="";
         for (colors c : colors.values()) {
-            s+=c.name();
+            s+=c.name()+" ";
         }
         return s;
     }

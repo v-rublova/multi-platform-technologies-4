@@ -7,11 +7,9 @@ import java.util.Scanner;
  */
 public class SmartHome {
 
-    /**
-     * @param args the command line arguments
-     */
+    static UI interf;
     public static void main(String[] args) {
-       UI interf = new UI();
+       interf = new UI();
        Scanner input = new Scanner(System.in);
        interf.Hello();  
        while(true){        
